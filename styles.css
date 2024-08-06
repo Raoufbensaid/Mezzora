@@ -68,9 +68,11 @@ body {
   width: 55px;
   margin-right: 10px;
 }
+
 #banniere {
   padding: 150px 0;
-  background-image: url("Img/NAD03825.jpg");
+  /* La ligne suivante a été retirée : */
+  /* background-image: url("Img/NAD03825.jpg"); */
   background-size: cover;
   background-position: center;
 }
