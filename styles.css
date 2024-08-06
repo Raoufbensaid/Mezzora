@@ -825,17 +825,3 @@ span.foot:hover::before {
   padding-bottom: 5px; /* Ajoute de l'espace entre le texte et la ligne */
   text-align: center; /* Centre le texte à l'intérieur de l'élément */
 }
-
-.sauce-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 2px; /* Épaisseur de la ligne de soulignement */
-  background-color: white; /* Couleur de la ligne de soulignement */
-}
-
-.sauce-link:hover {
-  color: #f0f0f0; /* Change la couleur au survol */
-}
