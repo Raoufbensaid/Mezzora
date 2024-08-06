@@ -807,3 +807,35 @@ span.foot:hover::before {
   color: #ffffff;
   font-size: 0.8em;
 }
+
+.centered-underline {
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+  gap: 20px; /* Ajoute de l'espace entre les éléments */
+}
+
+.sauce-link {
+  text-decoration: none; /* Retire la décoration par défaut des liens */
+  color: white; /* Couleur du texte */
+  position: relative;
+}
+
+.sauce-link h6 {
+  margin: 0; /* Retire la marge par défaut */
+  padding-bottom: 5px; /* Ajoute de l'espace entre le texte et la ligne */
+  text-align: center; /* Centre le texte à l'intérieur de l'élément */
+}
+
+.sauce-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px; /* Épaisseur de la ligne de soulignement */
+  background-color: white; /* Couleur de la ligne de soulignement */
+}
+
+.sauce-link:hover {
+  color: #f0f0f0; /* Change la couleur au survol */
+}
