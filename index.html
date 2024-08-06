@@ -2,41 +2,30 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
     <!-- SEO -->
     <title>Mezzora' Pizza - Pizzeria à Rueil-Malmaison</title>
-    <meta
-      name="description"
-      content="Pizzeria switchs à Rueil-Malmaison. Découvrez nos délicieuses pizzas artisanales et nos switchs faits maison, à emporter. Nombreuses options végétariennes et personnalisations possibles. Promotions et réductions spéciales, livraison."
-    />
-    <meta
-      name="keywords"
-      content="Mezzora' Pizza, pizzeria, Rueil-Malmaison, pizzas, sandwichs, switchs, Mezzora, options végé, choix végétarien, pizza végé, pizzas végétariennes, commander pizza, commander pizza Rueil-Malmaison, livraison"
-    />
-    <!-- CSS -->
-    <link rel="preload" href="Img/pizza-banniere.JPG" as="image" />
+    <meta name="description" content="Pizzeria switchs à Rueil-Malmaison. Découvrez nos délicieuses pizzas artisanales et nos switchs faits maison, à emporter. Nombreuses options végétariennes et personnalisations possibles. Promotions et réductions spéciales, livraison." />
+    <meta name="keywords" content="Mezzora' Pizza, pizzeria, Rueil-Malmaison, pizzas, sandwichs, switchs, Mezzora, options végé, choix végétarien, pizza végé, pizzas végétariennes, commander pizza, commander pizza Rueil-Malmaison, livraison" />
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/carte.png" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Preload -->
+    <link rel="preload" href="Img/pizza-banniere.JPG" as="image" />
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
     
-  </head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
   <body>
     <!-- Navigation -->
     <a href="#banniere"><nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -74,6 +63,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link scroll-link" href="">Desserts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-link" href="#menu-Glaces">Glaces</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-link" href="">Boissons</a>
           </li>
           <li class="nav-item">
             <a class="nav-link scroll-link" href="#horaires">Horaires</a>
@@ -524,28 +519,7 @@
           Nos Pâtes penne
         </h2>
         <div class="row">
-          <!-- Carte Sandwich 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="card animate__animated animate__fadeInUp">
-              <div class="ribbon-wrapper">
-                <div class="ribbon">Top #1</div>
-              </div>
-              <img
-                src="Img/Carbonara.JPG"
-                class="card-img-top"
-                alt="Photo Sandwich L'Antique"
-                loading="lazy"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Carbonara</h5>
-                <p class="card-text recette">
-                  1/2 baguette, crème, oignon, lardon, raclette.
-                </p>
-                <p class="card-text prix">Medium : 6€</p>
-              </div>
-            </div>
-          </div>
-          <!-- Carte Sandwich 2 -->
+          <!-- Carte Pâtes 1 -->
           <div class="col-md-4 mb-4">
             <div class="card animate__animated animate__fadeInUp">
               <img
@@ -557,27 +531,69 @@
               <div class="card-body">
                 <h5 class="card-title">Bolognaise</h5>
                 <p class="card-text recette">
-                  1/2 baguette, mayonnaise, salade, tomates, thon, oeuf dur.
+                  Description des Pâtes au Bolognaise.
                 </p>
-                <p class="card-text prix">Medium : 5€</p>
+                <p class="card-text prix">Prix : 8.50€</p>
               </div>
             </div>
           </div>
-          <!-- Carte Sandwich 3 -->
+          <!-- Carte Pâtes 2 -->
           <div class="col-md-4 mb-4">
             <div class="card animate__animated animate__fadeInUp">
               <img
-                src="Img/Saumon.JPG"
+                src="Img/Carbonara.jpg"
                 class="card-img-top"
                 alt="Photo Sandwich Le Classico"
                 loading="lazy"
               />
               <div class="card-body">
+                <h5 class="card-title">Carbonara</h5>
+                <p class="card-text recette">
+                  Description des Pâtes au Carbonara.
+                </p>
+                <p class="card-text prix">Prix : 8.50€</p>
+              </div>
+            </div>
+          </div>
+          <!-- Carte Pâtes 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card animate__animated animate__fadeInUp">
+              <div class="ribbon-wrapper">
+                <div class="ribbon">Top #1</div>
+              </div>
+              <img
+                src="Img/Napolitana.jpg"
+                class="card-img-top"
+                alt="Photo Sandwich L'Antique"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Napolitana</h5>
+                <p class="card-text recette">
+                  Description des Pâtes au Napolitana.
+                </p>
+                <p class="card-text prix">Prix : 8.50€</p>
+              </div>
+            </div>
+          </div>
+          <!-- Carte Pâtes 4 -->
+          <div class="col-md-4 mb-4">
+            <div class="card animate__animated animate__fadeInUp">
+              <div class="ribbon-wrapper">
+                <div class="ribbon">Top #1</div>
+              </div>
+              <img
+                src="Img/Saumon.jpg"
+                class="card-img-top"
+                alt="Photo Sandwich L'Antique"
+                loading="lazy"
+              />
+              <div class="card-body">
                 <h5 class="card-title">Saumon</h5>
                 <p class="card-text recette">
-                  1/2 baguette, salade, tomates, beurre, emmental.
+                  Description des Pâtes au Saumon.
                 </p>
-                <p class="card-text prix">Medium : 5€</p>
+                <p class="card-text prix">Prix : 9.50€</p>
               </div>
             </div>
           </div>
@@ -585,8 +601,94 @@
       </div>
     </section>
 
-    <!-- Section Avis -->
+    <!-- Section Menu Glaces -->
+    <section id="menu-Glaces" class="py-5">
+      <div class="container">
+        <h2
+          class="text-center mb-4 animate__animated animate__fadeInDown"
+          id="favicon-carte-sandwich"
+        >
+          Nos Glaces
+        </h2>
+        <div class="row">
+          <!-- Carte Glace 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card animate__animated animate__fadeInUp">
+              <img
+                src="Img/Cookie.jpg"
+                class="card-img-top"
+                alt="Photo Sandwich Le Classico"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cookie Dough</h5>
+                <p class="card-text recette">
+                  Description de la fameuse glace Cookie Dough.
+                </p>
+                <p class="card-text prix">465 ml : 6.90€ | 100 ml : 3.20€</p>
+              </div>
+            </div>
+          </div>
+          <!-- Carte Glace 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card animate__animated animate__fadeInUp">
+              <img
+                src="Img/Chocolat.jpg"
+                class="card-img-top"
+                alt="Photo Sandwich Le Classico"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chocolat Fudge Brownie</h5>
+                <p class="card-text recette">
+                  Description de la glace Chocolat Fudge Brownie.
+                </p>
+                <p class="card-text prix">465 ml : 6.90€ | 100 ml : 3.20€</p>
+              </div>
+            </div>
+          </div>
+          <!-- Carte Glace 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card animate__animated animate__fadeInUp">
+              <img
+                src="Img/Caramel.jpg"
+                class="card-img-top"
+                alt="Photo Sandwich Le Classico"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Caramel Brownie Party</h5>
+                <p class="card-text recette">
+                  Description de la glace Caramel Brownie Party.
+                </p>
+                <p class="card-text prix">465 ml : 6.90€ | 100 ml : 3.20€</p>
+              </div>
+            </div>
+          </div>
+          <!-- Carte Glace 4 -->
+          <div class="col-md-4 mb-4">
+            <div class="card animate__animated animate__fadeInUp">
+              <img
+                src="Img/Peanut.jpg"
+                class="card-img-top"
+                alt="Photo Sandwich Le Classico"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Peanut Butter Cup</h5>
+                <p class="card-text recette">
+                  Description de la glace Peanut Butter Cup.
+                </p>
+                <p class="card-text prix">465 ml : 6.90€ | 100 ml : 3.20€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+
+    <!-- Section Avis -->
     <!-- Section Horaires-->
     <section id="horaires">
       <div class="container">
