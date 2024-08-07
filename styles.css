@@ -31,7 +31,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #3c3a39;
+  background-color: #2b2824;
   color: #fff;
   cursor: default;
 }
@@ -86,16 +86,16 @@ body {
 }
 
 #menu-pizza,
-#menu-sandwich {
+#menu-pâtes {
   padding: 2rem 0;
 }
 
 #menu-pizza h2,
-#menu-sandwich h2 {
+#menu-pâtes h2 {
   margin-bottom: 3rem !important;
 }
 
-#menu-sandwich h2::after {
+#menu-pâtes h2::after {
   display: flex;
   font-weight: normal;
   font-style: italic;
@@ -197,10 +197,6 @@ body {
 #menu-pizza .btn-agora:hover {
   background-color: #fff;
   border-color: #fff;
-}
-
-.card:hover {
-  transform: scale(1.05);
 }
 
 .card-title {
@@ -781,10 +777,6 @@ span.foot:hover::before {
   margin-bottom: 2rem;
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
-
 /* Styles pour les badges de supplément */
 .bulles-supp {
   text-align: center;
@@ -824,4 +816,79 @@ span.foot:hover::before {
   margin: 0; /* Retire la marge par défaut */
   padding-bottom: 5px; /* Ajoute de l'espace entre le texte et la ligne */
   text-align: center; /* Centre le texte à l'intérieur de l'élément */
+}
+
+/* Section Horaires */
+.bg-image-horaires {
+  background-image: url("Img/5pizza.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-size: cover; /* L'image couvre toute la section */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Ne pas répéter l'image */
+  position: relative;
+}
+
+.bg-image-horaires .container {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-image-horaires::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(38, 34, 34, 0.7); /* Couleur et transparence du fond */
+  z-index: 1;
+}
+
+/* Section Glaces */
+.bg-image-glaces {
+  background-image: url("Img/glaces.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-size: cover; /* L'image couvre toute la section */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Ne pas répéter l'image */
+  position: relative;
+}
+
+.bg-image-glaces .container {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-image-glaces::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(38, 34, 34, 0.7); /* Couleur et transparence du fond */
+  z-index: 1;
+}
+
+/* Section pâtes */
+.bg-image-pâtes {
+  background-image: url("Img/pateSaumon.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-size: cover; /* L'image couvre toute la section */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Ne pas répéter l'image */
+  position: relative;
+}
+
+.bg-image-pâtes .container {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-image-pâtes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(38, 34, 34, 0.7); /* Couleur et transparence du fond */
+  z-index: 1;
 }
