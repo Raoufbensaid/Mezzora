@@ -86,12 +86,14 @@ body {
 }
 
 #menu-pizza,
-#menu-pâtes {
+#menu-pâtes,
+#menu-switch {
   padding: 2rem 0;
 }
 
 #menu-pizza h2,
-#menu-pâtes h2 {
+#menu-pâtes h2,
+#menu-switch h2 {
   margin-bottom: 3rem !important;
 }
 
@@ -189,12 +191,14 @@ body {
   background-color: unset;
 }
 
-#menu-pizza .btn-agora {
+#menu-pizza,
+#menu-switch .btn-agora {
   background-color: #fff;
   border-color: #fff;
 }
 
-#menu-pizza .btn-agora:hover {
+#menu-pizza,
+#menu-switch .btn-agora:hover {
   background-color: #fff;
   border-color: #fff;
 }
@@ -257,29 +261,21 @@ body {
   justify-content: space-between;
 }
 
-.ribbon-wrapper {
-  width: 85px;
-  height: 88px;
-  overflow: hidden;
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  .ribbon {
-    font: bold 15px sans-serif;
-    color: #333;
-    text-align: center;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    position: relative;
-    padding: 7px 0;
-    top: 15px;
-    left: -30px;
-    width: 120px;
-    background-color: var(--ps-classique);
-    color: #fff;
-  }
+.ribbon-wrapper .ribbon {
+  font: bold 15px sans-serif;
+  color: #333;
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  position: relative;
+  padding: 7px 0;
+  top: 15px;
+  left: -30px;
+  width: 120px;
+  background-color: var(--ps-classique);
+  color: #fff;
 }
 
 .ribbon:before {
@@ -764,7 +760,8 @@ span.foot:hover::before {
 }
 
 /* Styles pour les titres des colonnes */
-#menu-pizza h3 {
+#menu-pizza,
+#menu-switch h3 {
   margin-bottom: 2rem;
   color: var(--ps-agora);
 }
@@ -844,7 +841,7 @@ span.foot:hover::before {
 }
 
 /* Section Glaces */
-.bg-image-glaces {
+.bg-image-glace {
   background-image: url("Img/glaces.jpg"); /* Remplace ce chemin par l'URL de ton image */
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centrer l'image */
@@ -852,12 +849,12 @@ span.foot:hover::before {
   position: relative;
 }
 
-.bg-image-glaces .container {
+.bg-image-glace .container {
   position: relative;
   z-index: 2;
 }
 
-.bg-image-glaces::before {
+.bg-image-glace::before {
   content: "";
   position: absolute;
   top: 0;
@@ -882,6 +879,56 @@ span.foot:hover::before {
 }
 
 .bg-image-pâtes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(38, 34, 34, 0.7); /* Couleur et transparence du fond */
+  z-index: 1;
+}
+
+/* Section Switch panini */
+.bg-image-sp {
+  background-image: url("Img/Panini.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-size: cover; /* L'image couvre toute la section */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Ne pas répéter l'image */
+  position: relative;
+}
+
+.bg-image-sp .container {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-image-sp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(38, 34, 34, 0.7); /* Couleur et transparence du fond */
+  z-index: 1;
+}
+
+/* Section potatoes */
+.bg-image-potatoes {
+  background-image: url("Img/Potatoes.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-size: cover; /* L'image couvre toute la section */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Ne pas répéter l'image */
+  position: relative;
+}
+
+.bg-image-potatoes .container {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-image-potatoes::before {
   content: "";
   position: absolute;
   top: 0;
