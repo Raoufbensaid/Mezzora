@@ -842,7 +842,7 @@ span.foot:hover::before {
 
 /* Section Glaces */
 .bg-image-glace {
-  background-image: url("Img/glaces.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-image: url("Imgs/glaces.jpg"); /* Remplace ce chemin par l'URL de ton image */
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Ne pas répéter l'image */
@@ -891,7 +891,7 @@ span.foot:hover::before {
 
 /* Section Switch panini */
 .bg-image-sp {
-  background-image: url("Img/Panini.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-image: url("Imgs/panini.jpg"); /* Remplace ce chemin par l'URL de ton image */
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Ne pas répéter l'image */
@@ -916,7 +916,7 @@ span.foot:hover::before {
 
 /* Section potatoes */
 .bg-image-potatoes {
-  background-image: url("Img/Potatoes.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-image: url("Imgs/pota.jpg"); /* Remplace ce chemin par l'URL de ton image */
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Ne pas répéter l'image */
