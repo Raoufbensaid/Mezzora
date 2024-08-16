@@ -963,3 +963,76 @@ span.foot:hover::before {
   background-color: rgba(38, 34, 34, 0.7); /* Couleur et transparence du fond */
   z-index: 1;
 }
+
+/* Section Offres Spéciales */
+#special-offers {
+  background-image: url("Img/pates.jpg"); /* Image de fond pour la section */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Couleur du texte par défaut dans la section */
+}
+
+.offer-card {
+  background-color: #ffffff; /* Fond blanc pour les cartes */
+  border-radius: 10px; /* Bordures arrondies */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour les cartes */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px); /* Légère élévation au survol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombre plus intense au survol */
+}
+
+.offer-card h3 {
+  font-size: 1.5rem;
+  color: var(
+    --ps-bleu
+  ); /* Utilisation d'une variable de couleur pour le titre */
+  margin-bottom: 15px;
+}
+
+.offer-card p {
+  font-size: 1rem;
+  color: #333; /* Couleur du texte */
+}
+
+.offer-price {
+  font-size: 1.25rem;
+  color: var(--ps-rouge); /* Couleur rouge pour les prix */
+  margin-bottom: 10px;
+}
+
+.menu-item h4 {
+  font-size: 1.2rem;
+  color: var(--ps-agora); /* Utilisation d'une variable de couleur */
+  margin-bottom: 10px;
+}
+
+.text-muted {
+  color: #6c757d !important; /* Couleur grise pour les textes secondaires */
+}
+
+.badge-success {
+  background-color: var(
+    --ps-vert
+  ); /* Badge vert pour l'option de taille supérieure */
+  font-size: 0.9rem;
+}
+
+/* Ajout d'animation pour la section */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate__fadeInUp {
+  animation: fadeInUp 0.8s ease-in-out;
+}
