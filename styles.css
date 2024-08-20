@@ -891,7 +891,7 @@ span.foot:hover::before {
 
 /* Section Switch panini */
 .bg-image-sp {
-  background-image: url("Imgs/panini.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mezzora-92.appspot.com/o/img%2Fpani.jpg?alt=media&token=6bc83efa-2098-4211-ad54-5ab4abd1d3c3"); /* Remplace ce chemin par l'URL de ton image */
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Ne pas répéter l'image */
@@ -916,7 +916,7 @@ span.foot:hover::before {
 
 /* Section potatoes */
 .bg-image-potatoes {
-  background-image: url("Imgs/pota.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mezzora-92.appspot.com/o/img%2Fpotata.jpg?alt=media&token=01e73b56-6d34-4e40-857b-425660d0eb07"); /* Remplace ce chemin par l'URL de ton image */
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Ne pas répéter l'image */
@@ -941,7 +941,7 @@ span.foot:hover::before {
 
 /* Section Desserts */
 .bg-image-dessert {
-  background-image: url("Imgs/tira.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mezzora-92.appspot.com/o/img%2Ftiramisu.jpg?alt=media&token=477be785-97a9-4c27-a87d-efacec1ef57f"); /* Remplace ce chemin par l'URL de ton image */
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Ne pas répéter l'image */
@@ -966,7 +966,7 @@ span.foot:hover::before {
 
 /* Section Offres Spéciales */
 #special-offers {
-  background-image: url("Img/pates.jpg"); /* Image de fond pour la section */
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mezzora-92.appspot.com/o/img%2FNAD03813.jpg?alt=media&token=f74f4f02-badc-4f16-a2a4-735c9185f4a2"); /* Remplace ce chemin par l'URL de ton image */
   background-size: cover;
   background-position: center;
   color: #fff; /* Couleur du texte par défaut dans la section */
