@@ -625,7 +625,7 @@ footer a:hover {
 .event-image {
   flex: 1;
   height: 400px;
-  background-image: url("Img/pizza-banniere.JPG");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mezzora-92.appspot.com/o/img%2Fpizza-banniere.jpg?alt=media&token=a5941846-87c3-4ce9-b708-a1d2334d79ec");
   background-size: cover;
   background-position: center;
   height: 450px;
@@ -817,7 +817,7 @@ span.foot:hover::before {
 
 /* Section Horaires */
 .bg-image-horaires {
-  background-image: url("Img/5pizza.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mezzora-92.appspot.com/o/img%2FNAD03813.jpg?alt=media&token=f74f4f02-badc-4f16-a2a4-735c9185f4a2"); /* Remplace ce chemin par l'URL de ton image */
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Ne pas répéter l'image */
@@ -842,7 +842,7 @@ span.foot:hover::before {
 
 /* Section Glaces */
 .bg-image-glace {
-  background-image: url("Imgs/glaces.jpg"); /* Remplace ce chemin par l'URL de ton image */
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mezzora-92.appspot.com/o/img%2FChocolat.jpg?alt=media&token=4103a28c-ebfb-4b90-9967-fd513e0d16ba"); /* Remplace ce chemin par l'URL de ton image */
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Ne pas répéter l'image */
