@@ -966,73 +966,87 @@ span.foot:hover::before {
 
 /* Section Offres Spéciales */
 #special-offers {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/mezzora-92.appspot.com/o/img%2FNAD03813.jpg?alt=media&token=f74f4f02-badc-4f16-a2a4-735c9185f4a2"); /* Remplace ce chemin par l'URL de ton image */
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mezzora-92.appspot.com/o/img%2FNAD03813.jpg?alt=media&token=f74f4f02-badc-4f16-a2a4-735c9185f4a2");
   background-size: cover;
   background-position: center;
-  color: #fff; /* Couleur du texte par défaut dans la section */
+  color: #fff;
+}
+
+/* Conteneur de défilement horizontal */
+.offers-slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.offers-slider::-webkit-scrollbar {
+  display: none;
 }
 
 .offer-card {
-  background-color: #ffffff; /* Fond blanc pour les cartes */
-  border-radius: 10px; /* Bordures arrondies */
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour les cartes */
+  min-width: 300px;
+  max-width: 300px;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px; /* Réduction du padding pour diminuer la hauteur */
+  margin: 0 10px; /* Réduction de l'espace entre les cartes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  scroll-snap-align: start;
 }
 
 .offer-card:hover {
-  transform: translateY(-5px); /* Légère élévation au survol */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombre plus intense au survol */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.offer-card h3 {
-  font-size: 1.5rem;
-  color: var(
-    --ps-bleu
-  ); /* Utilisation d'une variable de couleur pour le titre */
-  margin-bottom: 15px;
-}
-
-.offer-card p {
-  font-size: 1rem;
-  color: #333; /* Couleur du texte */
-}
-
-.offer-price {
-  font-size: 1.25rem;
-  color: var(--ps-rouge); /* Couleur rouge pour les prix */
-  margin-bottom: 10px;
-}
-
-.menu-item h4 {
-  font-size: 1.2rem;
-  color: var(--ps-agora); /* Utilisation d'une variable de couleur */
-  margin-bottom: 10px;
-}
-
-.text-muted {
-  color: #6c757d !important; /* Couleur grise pour les textes secondaires */
-}
-
-.badge-success {
-  background-color: var(
-    --ps-vert
-  ); /* Badge vert pour l'option de taille supérieure */
-  font-size: 0.9rem;
-}
-
-/* Ajout d'animation pour la section */
-@keyframes fadeInUp {
+/* Effet slide */
+@keyframes slideIn {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(100%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
-.animate__fadeInUp {
-  animation: fadeInUp 0.8s ease-in-out;
+.offer-card {
+  animation: slideIn 0.8s ease-in-out;
+}
+
+/* Taille de police réduite */
+.offer-card h3 {
+  font-size: 1.3rem; /* Réduction de la taille du titre */
+  color: var(--ps-bleu);
+  margin-bottom: 8px; /* Réduction de l'espace en bas du titre */
+}
+
+.offer-card p {
+  font-size: 0.9rem; /* Réduction de la taille du texte */
+  color: #333;
+  margin-bottom: 6px; /* Réduction des marges pour chaque texte */
+}
+
+.offer-price {
+  font-size: 1.1rem; /* Réduction de la taille des prix */
+  color: var(--ps-rouge);
+  margin-bottom: 8px;
+}
+
+.menu-item h4 {
+  font-size: 1.1rem; /* Réduction de la taille des titres des menus */
+  color: var(--ps-agora);
+  margin-bottom: 6px;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.badge-success {
+  background-color: var(--ps-vert);
+  font-size: 0.8rem;
 }
