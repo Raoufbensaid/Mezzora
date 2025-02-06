@@ -842,7 +842,7 @@ span.foot:hover::before {
 
 /* Section Glaces */
 .bg-image-glace {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/mezzora-92.appspot.com/o/img%2FChocolat.jpg?alt=media&token=4103a28c-ebfb-4b90-9967-fd513e0d16ba"); /* Remplace ce chemin par l'URL de ton image */
+  background-image: url("images/img/BJ.jpeg"); /* Remplace ce chemin par l'URL de ton image */
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Ne pas répéter l'image */
@@ -916,7 +916,7 @@ span.foot:hover::before {
 
 /* Section potatoes */
 .bg-image-potatoes {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/mezzora-92.appspot.com/o/img%2Fpotata.jpg?alt=media&token=01e73b56-6d34-4e40-857b-425660d0eb07"); /* Remplace ce chemin par l'URL de ton image */
+  background-image: url("images/img/Wings.jpeg"); /* Remplace ce chemin par l'URL de ton image */
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Ne pas répéter l'image */
