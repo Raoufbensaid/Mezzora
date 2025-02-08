@@ -1050,3 +1050,7 @@ span.foot:hover::before {
   background-color: var(--ps-vert);
   font-size: 0.8rem;
 }
+
+#menu-pizza {
+  background: linear-gradient(135deg, #e1c0a7, #d4b397);
+}
