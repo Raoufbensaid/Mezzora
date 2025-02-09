@@ -31,9 +31,14 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #2b2824;
-  color: #fff;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  color: #333; /* Couleur de texte sombre pour un bon contraste */
   cursor: default;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .agora {
@@ -825,6 +830,7 @@ span.foot:hover::before {
 }
 
 .bg-image-horaires .container {
+  color: white;
   position: relative;
   z-index: 2;
 }
@@ -850,6 +856,7 @@ span.foot:hover::before {
 }
 
 .bg-image-glace .container {
+  color: white;
   position: relative;
   z-index: 2;
 }
@@ -874,6 +881,7 @@ span.foot:hover::before {
 }
 
 .bg-image-pâtes .container {
+  color: white;
   position: relative;
   z-index: 2;
 }
@@ -899,6 +907,7 @@ span.foot:hover::before {
 }
 
 .bg-image-sp .container {
+  color: white;
   position: relative;
   z-index: 2;
 }
@@ -924,6 +933,7 @@ span.foot:hover::before {
 }
 
 .bg-image-potatoes .container {
+  color: white;
   position: relative;
   z-index: 2;
 }
@@ -949,6 +959,7 @@ span.foot:hover::before {
 }
 
 .bg-image-dessert .container {
+  color: white;
   position: relative;
   z-index: 2;
 }
@@ -1052,5 +1063,79 @@ span.foot:hover::before {
 }
 
 #menu-pizza {
-  background: linear-gradient(135deg, #e1c0a7, #d4b397);
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+}
+
+/* #boissons h2 {
+  color: white;
+} */
+
+/* Promo */
+
+.menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px; /* Ajoute une marge en haut */
+  margin-bottom: 30px; /* Ajoute une marge en bas */
+}
+.box {
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #ffffff;
+  border: 3px solid #2e6b2e;
+  color: #2e6b2e;
+}
+.box:hover {
+  transform: scale(1.05);
+  background-color: #d45527;
+  color: white;
+  border-color: #d45527;
+}
+.delivery {
+  background-color: rgba(
+    179,
+    71,
+    30,
+    0.1
+  ); /* Orange foncé avec 90% d'opacité */
+}
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.price {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    gap: 10px;
+  }
+
+  .box {
+    width: 250px; /* Réduit la largeur pour les petites résolutions */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 200px; /* Encore plus petit pour les smartphones */
+  }
+
+  .price {
+    font-size: 1.2em; /* Ajuste la taille du texte pour les petits écrans */
+  }
 }
