@@ -75,19 +75,52 @@ body {
 }
 
 #banniere {
-  padding: 150px 0;
-  /* La ligne suivante a été retirée : */
-  /* background-image: url("Img/NAD03825.jpg"); */
+  position: relative;
+  background-image: url("images/img/ban.jpeg");
   background-size: cover;
   background-position: center;
+  padding: 150px 0;
+  overflow: hidden;
 }
 
+/* Ajout d'une div pour gérer le flou */
+.banniere-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/img/ban.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  opacity: 0.7;
+  z-index: 0;
+}
+
+/* Met le contenu au-dessus du flou */
+#banniere .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ombre du texte pour améliorer la lisibilité */
 #banniere h1 {
-  text-shadow: 0px 1px 3px #222222;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* Couleur orange pour Mezzora */
+#banniere h1 span {
+  color: orange;
 }
 
 #banniere .desc {
   text-shadow: 0px 1px 3px #222222;
+}
+
+.small-text {
+  font-size: 0.5rem;
+  font-style: italic;
 }
 
 #menu-pizza,
@@ -747,10 +780,6 @@ span.foot:hover::before {
     display: none;
   }
 
-  #banniere {
-    padding-bottom: 75px;
-  }
-
   .infos {
     margin-bottom: 2rem;
   }
@@ -1048,12 +1077,13 @@ span.foot:hover::before {
 }
 
 .menu-item h4 {
-  font-size: 1.1rem; /* Réduction de la taille des titres des menus */
+  font-size: 1rem; /* Réduction de la taille des titres des menus */
   color: var(--ps-agora);
   margin-bottom: 6px;
 }
 
 .text-muted {
+  font-size: 0.7rem;
   color: #6c757d !important;
 }
 
